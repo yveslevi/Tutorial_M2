@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="curriculo.css">
+    <title>Currículo Yves</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./cv.js"></script>
+</head>
+<body onload="data()"> 
+    
+
+    <h1 id="name"></h1>
+    <p class="hide"><span id="number"></span> | <span id="email"></span> | <span id="zipcode"></span></p>
+    <hr>
+    <h3 class="subtitulo" onclick="clicar()">Resumo</h3>
+    <p class="hide">Apaixonado pelo mundo das finanças, acompanho diariamente os noticiários políticos e 
+        econômicos como uma forma de me introduzir no mundo, uma vez que gosto desses 
+        assuntos. Além disso, é importante citar que tenho uma boa noção do uso do excel, inglês 
+        avançado e disposição para aprender. </p>   
+    <h3 class="subtitulo" onmouseover="">Certificação</h3>
+    <ul>
+        <li class="hide">EF Set Certificate</li>
+        <li class="hide">EF English Live Lapa</li>
+    </ul>
+
+    <h3 class="subtitulo">Cursos</h3>
+    <ul>
+        <li class="hide">Escola do Investidor – Valuation de forma aprofundada -> Alfa Research, ministrado pelo 
+            CFA Ricardo Perrufo.</li>
+        <li class="hide">Cursando “Programação em python do básico ao avançado” na Udemy Academy.</li>
+        <li class="hide">Cursos em vídeo -> Excel </li>
+    </ul>
+
+    <h3 class="subtitulo">Educação</h3>
+        <li class="hide">Cursando Engenharia de Software no Instituto de Tecnologia e Liderança</li>
+        <li class="hide">Cursando Administração de Empresas na Universidade de São Paulo</li>
+    </ul>
+    
+    <h3 class="subtitulo">Rede social</h3>
+    <a href = "https://linkedin.com/in/yveslevi">linkedin.com/in/yveslevi</a> <br> <br>
+
+    <h3 class="subtitulo">Faça uma sugestão</h3>
+    <button id="btn" onclick="enviar()"> Verificação de perfil </button>
+    
+</body>
+</html>
