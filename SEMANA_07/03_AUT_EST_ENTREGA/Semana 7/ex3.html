@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3 - Semana 7</title>
+    <link rel="stylesheet" href="three.css">
+</head>
+<body>
+    <h1>Atividade 3</h1>
+    <p>Qual é o seu número de celular?</p>
+    <form method="get" action="ex3.html">
+        <fieldset>
+            
+
+            <label for="phone">Coloque o seu número de celular:</label>
+            <!--É bom utilizar esse type="tel" para telefones, pois nos celulares aparecerá um teclado especial somente com números-->
+            <!--Com "required" o campo necessariamente terá que ser preenchido para que tal ação possa ser executada-->
+            <!--The "pattern" uses regular expressions to define the constraints-->
+            <input type="tel" id="phone" name="phone" required pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}"/>
+            
+
+            <span class="note">Formato: (XX)XXXXX-XXXX</span>
+        </fieldset>
+        <br>
+    </form>
+</body>
+</html>

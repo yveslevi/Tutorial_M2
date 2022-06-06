@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <form>
+        <input id="dinheiro" type="number" placeholder="Digite quanto você quer sacar (R$)">
+    </form>
+    <button onclick="minhafuncao()">Calcular</button>
+    <script>
+        var n100 = 0;
+        var n50 = 0;
+        var n10 = 0;
+        var n5 = 0;
+        var n1 = 0;
+        function minhafuncao() {
+            var total = document.getElementById('dinheiro').value;
+            if (total >= 100){
+                n100 = parseInt(total/100) // o parseInt faz o número ignorar a vírgula
+                total -= (n100*100)
+            } else if ( total >= 50){
+                n50 = parseInt(total/50)
+                total -= (n50*50)
+            } else if (total >= 10){
+                n10 = parseInt(total/10)
+                total -= (n10*10)
+            } else if (total >= 5){
+                n5 = parseInt(total/5)
+                total -= (n5*5)
+            }
+            alert('O total de cédulas de 100 reais é: ' + n100)
+            alert('O total de cédulas de 50 reais é: '+ n50)
+            alert('O total de cédulas de 10 reais é: '+ n10)
+            alert('O total de cédulas de 5 reais é: '+ n5)
+            alert('O total de cédulas de 1 real é: '+ total)
+        }
+    </script>
+    
+</body>
+</html>
